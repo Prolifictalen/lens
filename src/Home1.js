@@ -91,17 +91,7 @@ const Home1 = () => {
         </Container>
       </Navbar>
 
-      {/* Mirages Section */}
-      <div className="container my-4">
-        <a href="/mirages">
-          <img
-            src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
-            className="img-fluid w-100"
-            alt="Mirages Banner"
-          />
-        </a>
-      </div>
-
+      
       {/* Other Sections */}
       <Carousel interval={1200} className="mt-4">
         {[
