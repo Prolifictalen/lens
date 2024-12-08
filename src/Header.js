@@ -4,14 +4,6 @@ import React from 'react';
 
 const Header = () => {
   // const temp = true; // Set temp to true or false based on your logic
-  const shouldRenderHeader = false; // Set this condition as needed
-
-  if (!shouldRenderHeader) {
-    return null; // Do not render anything
-  }
-
-  return <div className="header-container">Header</div>;
-};
 
   // // Using if-else statement for conditional rendering
   // let componentToRender;
