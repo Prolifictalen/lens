@@ -21,13 +21,18 @@ const Home1 = () => {
 
   const [searchItem, setSearchItem] = useState("");
   const search = async () => {
-    const data = await axios.get(`http://localhost:8000/api/v1/user/getitems/:${searchItem}`);
-    console.log(data.data);
-    setSearchItem("");
+    try {
+      const response = await axios.get(`http://localhost:8000/api/v1/user/getitems/${searchItem}`);
+      console.log(response.data);
+      setSearchItem("");
+    } catch (error) {
+      console.error("Error fetching search results:", error);
+    }
   };
 
   return (
     <>
+      {/* Navbar */}
       <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
@@ -51,13 +56,17 @@ const Home1 = () => {
                   aria-label="Search"
                   style={{ width: "300px", fontSize: "16px", height: "40px" }}
                 />
-                <Button variant="outline-success" onClick={search}>Search</Button>
+                <Button variant="outline-success" onClick={search}>
+                  Search
+                </Button>
               </InputGroup>
             </Form>
           </Nav>
           <Nav>
             <Nav.Link href="trackorder">Track Order</Nav.Link>
-            <Button variant="white" onClick={handleShow}>Login/Register</Button>
+            <Button variant="white" onClick={handleShow}>
+              Login/Register
+            </Button>
             <Nav.Link href="wishlist" className="d-flex align-items-center">
               <FontAwesomeIcon icon={faHeart} />
               <span className="ms-1">Wishlist</span>
@@ -93,77 +102,18 @@ const Home1 = () => {
         </a>
       </div>
 
-      {/* Wear the Trend Section */}
-      <div className="container my-5">
-        <div className="row align-items-center">
-          <div className="col-12 col-md-4 mb-3">
-            <h3>WEAR THE TREND</h3>
-            <p>Our Hottest Collections</p>
-          </div>
-          <div className="col-12 col-md-8">
-            <div className="row g-3">
-              {[
-                { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
-                { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
-                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
-                { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
-              ].map((item, idx) => (
-                <div className="col-6 col-md-3" key={idx}>
-                  <Link to={item.link} className="text-decoration-none text-dark">
-                    <Card>
-                      <Card.Img variant="top" src={item.img} className="img-fluid" />
-                      <Card.Body>
-                        <Card.Text className="text-center">{item.text}</Card.Text>
-                        <Button variant="outline-dark" className="d-block mx-auto mt-2">Explore</Button>
-                      </Card.Body>
-                    </Card>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Cards Section */}
-      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
-        {[
-          { link: "/eyeglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/a2.png", text: "Eyeglasses" },
-          { link: "/sunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/b2.png", text: "Sunglasses" },
-          { link: "/screenglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d2.png", text: "Screen Glasses" },
-          { link: "/contactlenses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d.png", text: "Contact Lenses" },
-          { link: "/powersunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/e2.png", text: "Power Sunglasses" }
-        ].map((card, index) => (
-          <Link to={card.link} key={index} style={{ textDecoration: "none", color: "inherit" }}>
-            <Card style={{ width: "16rem", height: "11rem" }}>
-              <Card.Img variant="top" src={card.img} style={{ width: "92%", margin: "auto", marginTop: "9px" }} />
-              <Card.Body>
-                <Card.Text style={{ textAlign: "center" }}>{card.text}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Link>
-        ))}
-      </div>
-
-      {/* Carousel */}
+      {/* Other Sections */}
       <Carousel interval={1200} className="mt-4">
         {[
           "https://static1.lenskart.com/media/desktop/img/23may/cannes/web.gif",
           "https://static1.lenskart.com/media/desktop/img/June24/combo_vc/Desktop.gif",
           "https://static1.lenskart.com/media/desktop/img/republic/petite/Web-banner%20option%202.jpg",
-          "https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
         ].map((src, idx) => (
           <Carousel.Item key={idx}>
             <img className="d-block w-100" src={src} alt={`Slide ${idx + 1}`} />
           </Carousel.Item>
         ))}
       </Carousel>
-
-      {/* Other Sections */}
-      <div className="container my-5">
-        <h3 className="text-center">Free Progressive Lenses</h3>
-        <img src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg" className="img-fluid" alt="Banner" />
-      </div>
 
       {/* Aqua Color Lenses Section */}
       <div className="container my-5">
@@ -186,16 +136,6 @@ const Home1 = () => {
               price: "$2400",
               img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-brown.jpg",
             },
-            {
-              text: "Aquacolor Premium Green Powered",
-              price: "$2500",
-              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-green-powered.jpg",
-            },
-            {
-              text: "Aquacolor Premium Naughty Brown Powered",
-              price: "$1500",
-              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-brown-powered.jpg",
-            },
           ].map((lens, idx) => (
             <div className="col-6 col-md-3" key={idx}>
               <Card>
@@ -206,41 +146,6 @@ const Home1 = () => {
                   <Button variant="outline-primary" className="d-block mx-auto">
                     Add to Cart
                   </Button>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Eye Glasses Section */}
-      <div className="container my-5">
-        <h3>Eye Glasses</h3>
-        <div className="row g-3">
-          {[
-            {
-              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c10-eyeglasses_img_9344_19_12_2023.jpg",
-              text: "Vincent Chase Eyeglasses",
-              price: "$2000",
-            },
-            {
-              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13784-c2-eyeglasses_vincent-chase-vc-e13784-c2-eyeglasses_g_3010.jpg",
-              text: "John Jacobs Eyeglasses",
-              price: "$2500",
-            },
-            {
-              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e16989-c1-eyeglasses_img_1234_20_02_2023.jpg",
-              text: "Lenskart Air Eyeglasses",
-              price: "$1500",
-            },
-          ].map((item, idx) => (
-            <div className="col-4" key={idx}>
-              <Card>
-                <Card.Img variant="top" src={item.img} />
-                <Card.Body>
-                  <Card.Text>{item.text}</Card.Text>
-                  <Card.Text>{item.price}</Card.Text>
-                  <Button variant="outline-primary">Add to Cart</Button>
                 </Card.Body>
               </Card>
             </div>
