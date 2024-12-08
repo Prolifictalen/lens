@@ -28,9 +28,7 @@ const Home1 = () => {
 
   return (
     <>
-    
-
-      <Navbar bg="white" variant="light" expand="lg" className="py-3">
+     <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
             <img src={lenskart} alt="Lenskart Logo" style={{ width: "150px", height: "auto" }} />
@@ -72,7 +70,7 @@ const Home1 = () => {
         </Container>
       </Navbar>
 
-      <Navbar bg="light" data-bs-theme="light" className="py-2">
+      <Navbar bg="Blue" data-bs-theme="light" className="py-2">
         <Container>
           <Nav className="flex-wrap justify-content-center">
             <Nav.Link href="eyeglasses">EYE GLASSES</Nav.Link>
