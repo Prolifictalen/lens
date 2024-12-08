@@ -12,12 +12,6 @@ body {
     margin: 0 auto; /* Center the card */
 }
 
-/* Navbar Styling */
-.navbar {
-    display: flex; /* Ensure Flexbox behavior */
-    flex-wrap: wrap;
-}
-
 /* Cards Container */
 .cards-container {
     display: flex; /* Flexbox layout */
