@@ -8,12 +8,7 @@ const Navbar1 = () => {
     <Navbar variant="light" expand="lg" style={{ height: '60px', backgroundColor: "#000042" }}>
         <Container fluid>
             <Navbar.Brand>
-                <img
-                src={lenskartwhite}
-                width="180"
-                height="90"
-                alt=""
-                />
+                <img src={lenskartwhite} alt="Lenskart" style={{ maxWidth: '100%', height: 'auto' }} />
             </Navbar.Brand>
         </Container>
     </Navbar>
