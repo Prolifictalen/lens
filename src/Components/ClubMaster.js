@@ -7,7 +7,6 @@ import useCounter from './Counter';
 const Clubmaster = () => {
   const { counters, incrementCounter, decrementCounter } = useCounter();
 
-  // Card data for Clubmaster
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c4-eyeglasses_img_1255_12_03_2024.jpg",
@@ -60,6 +59,13 @@ const Clubmaster = () => {
     fontWeight: 'bold',
   };
 
+  const gridStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+    gap: '20px',
+    padding: '20px',
+  };
+
   return (
     <>
       {/* Banner */}
@@ -73,20 +79,43 @@ const Clubmaster = () => {
       </div>
 
       {/* Cards Section 1 */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '30px', flexWrap: 'wrap' }}>
+      <div style={gridStyle}>
         {cardsData.map((card, index) => (
-          <Card style={{ width: '18rem', margin: '10px', position: 'relative' }} key={index}>
-            <FontAwesomeIcon icon={faHeart} style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer' }} />
-            <Card.Img variant="top" src={card.imgSrc} style={{ marginTop: '40px' }} />
+          <Card key={index} style={{ position: 'relative' }}>
+            <FontAwesomeIcon
+              icon={faHeart}
+              style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                cursor: 'pointer',
+              }}
+            />
+            <Card.Img variant="top" src={card.imgSrc} style={{ marginTop: '20px' }} />
             <Card.Body style={{ textAlign: 'left', marginTop: '7px' }}>
               <Card.Text style={textStyle}>{card.text}</Card.Text>
               <Card.Text style={textStyle}>{card.price}</Card.Text>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
-                <Button variant="outline-secondary" size="sm" onClick={() => decrementCounter(index)}>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginBottom: '10px',
+                }}
+              >
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  onClick={() => decrementCounter(index)}
+                >
                   -
                 </Button>
                 <span style={{ margin: '0 10px' }}>{counters[index]}</span>
-                <Button variant="outline-secondary" size="sm" onClick={() => incrementCounter(index)}>
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  onClick={() => incrementCounter(index)}
+                >
                   +
                 </Button>
               </div>
@@ -97,20 +126,43 @@ const Clubmaster = () => {
       </div>
 
       {/* Cards Section 2 */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '30px', flexWrap: 'wrap' }}>
+      <div style={gridStyle}>
         {cardsData1.map((card, index) => (
-          <Card style={{ width: '18rem', margin: '10px', position: 'relative' }} key={index}>
-            <FontAwesomeIcon icon={faHeart} style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer' }} />
-            <Card.Img variant="top" src={card.imgSrc} style={{ marginTop: '40px' }} />
+          <Card key={index} style={{ position: 'relative' }}>
+            <FontAwesomeIcon
+              icon={faHeart}
+              style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                cursor: 'pointer',
+              }}
+            />
+            <Card.Img variant="top" src={card.imgSrc} style={{ marginTop: '20px' }} />
             <Card.Body style={{ textAlign: 'left', marginTop: '7px' }}>
               <Card.Text style={textStyle}>{card.text}</Card.Text>
               <Card.Text style={textStyle}>{card.price}</Card.Text>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10px' }}>
-                <Button variant="outline-secondary" size="sm" onClick={() => decrementCounter(index)}>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  marginBottom: '10px',
+                }}
+              >
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  onClick={() => decrementCounter(index)}
+                >
                   -
                 </Button>
                 <span style={{ margin: '0 10px' }}>{counters[index]}</span>
-                <Button variant="outline-secondary" size="sm" onClick={() => incrementCounter(index)}>
+                <Button
+                  variant="outline-secondary"
+                  size="sm"
+                  onClick={() => incrementCounter(index)}
+                >
                   +
                 </Button>
               </div>
