@@ -27,15 +27,20 @@ body {
 }
 
 /* Mobile Media Queries */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
 @media (max-width: 480px) {
     .card {
         max-width: 90%; /* Make cards smaller on very small screens */
     }
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Add spacing between links */
+  }
 }
