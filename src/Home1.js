@@ -83,88 +83,24 @@ const Home1 = () => {
       </Navbar>
 
       {/* Cards Section */}
-      {/* starting card*/}
-      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', gap: '20px', flexWrap: 'nowrap' }}>
-        {/* Card 1 */}
-        <Link to="/eyeglasses" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Card style={{ width: '16rem', height: '11rem' }}>
-            <Card.Img 
-              variant="top" 
-              src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" 
-              style={{ marginTop: '9px', marginLeft: '9px', marginRight: '9px', width: "92%" }} 
-            />
-            <Card.Body>
-              <Card.Text style={{ textAlign: "center" }}>
-                Eyeglasses
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-  
-        {/* Card 2 */}
-        <Link to="/sunglasses" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Card style={{ width: '16rem', height: '11rem' }}>
-            <Card.Img 
-              variant="top" 
-              src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" 
-              style={{ marginTop: '9px', marginLeft: '9px', marginRight: '9px', width: "92%" }} 
-            />
-            <Card.Body>
-              <Card.Text style={{ textAlign: "center" }}>
-                Sunglasses
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-  
-        {/* Card 3 */}
-        <Link to="/screenglasses" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Card style={{ width: '16rem', height: '11rem' }}>
-            <Card.Img 
-              variant="top" 
-              src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" 
-              style={{ marginTop: '9px', marginLeft: '9px', marginRight: '9px', width: "92%" }} 
-            />
-            <Card.Body>
-              <Card.Text style={{ textAlign: "center" }}>
-                Screen Glasses
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-  
-        {/* Card 4 */}
-        <Link to="/contactlenses" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Card style={{ width: '16rem', height: '11rem' }}>
-            <Card.Img 
-              variant="top" 
-              src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png" 
-              style={{ marginTop: '9px', marginLeft: '9px', marginRight: '9px', width: "92%" }} 
-            />
-            <Card.Body>
-              <Card.Text style={{ textAlign: "center" }}>
-                Contact Lenses
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-  
-        {/* Card 5 */}
-        <Link to="/powersunglasses" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Card style={{ width: '16rem', height: '11rem' }}>
-            <Card.Img 
-              variant="top" 
-              src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" 
-              style={{ marginTop: '9px', marginLeft: '9px', marginRight: '9px', width: "92%" }} 
-            />
-            <Card.Body>
-              <Card.Text style={{ textAlign: "center" }}>
-                Power Sunglasses
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Link>
-  </div>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
+        {[
+          { link: "/eyeglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/a2.png", text: "Eyeglasses" },
+          { link: "/sunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/b2.png", text: "Sunglasses" },
+          { link: "/screenglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d2.png", text: "Screen Glasses" },
+          { link: "/contactlenses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d.png", text: "Contact Lenses" },
+          { link: "/powersunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/e2.png", text: "Power Sunglasses" }
+        ].map((card, index) => (
+          <Link to={card.link} key={index} style={{ textDecoration: "none", color: "inherit" }}>
+            <Card style={{ width: "16rem", height: "11rem" }}>
+              <Card.Img variant="top" src={card.img} style={{ width: "92%", margin: "auto", marginTop: "9px" }} />
+              <Card.Body>
+                <Card.Text style={{ textAlign: "center" }}>{card.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        ))}
+      </div>
 
       {/* Carousel */}
       <Carousel interval={1200} className="mt-4">
