@@ -28,7 +28,7 @@ const Home1 = () => {
 
   return (
     <>
-     <Navbar bg="white" variant="light" expand="lg" className="py-3">
+      <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
             <img src={lenskart} alt="Lenskart Logo" style={{ width: "150px", height: "auto" }} />
@@ -87,7 +87,6 @@ const Home1 = () => {
         <a href="/mirages">
           <img
             src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
-"
             className="img-fluid w-100"
             alt="Mirages Banner"
           />
@@ -112,11 +111,7 @@ const Home1 = () => {
                 <div className="col-6 col-md-3" key={idx}>
                   <Link to={item.link} className="text-decoration-none text-dark">
                     <Card>
-                      <Card.Img
-                        variant="top"
-                        src={item.img}
-                        className="img-fluid"
-                      />
+                      <Card.Img variant="top" src={item.img} className="img-fluid" />
                       <Card.Body>
                         <Card.Text className="text-center">{item.text}</Card.Text>
                         <Button variant="outline-dark" className="d-block mx-auto mt-2">Explore</Button>
@@ -169,91 +164,89 @@ const Home1 = () => {
         <h3 className="text-center">Free Progressive Lenses</h3>
         <img src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg" className="img-fluid" alt="Banner" />
       </div>
-     
-      {/* Aqua Color Lenses Section */}
-<div className="container my-5">
-  <a href="/contactlenses">
-    <img
-      src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
-      className="img-fluid w-100"
-      alt="Color Lenses Banner"
-    />
-  </a>
-  <div className="row g-3 my-3">
-    {[
-      {
-        text: "Aquacolor Premium Powered Green",
-        price: "$2000",
-        img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-green.jpg",
-      },
-      {
-        text: "Aquacolor Premium Naughty Brown",
-        price: "$2400",
-        img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-brown.jpg",
-      },
-      {
-        text: "Aquacolor Premium Green Powered",
-        price: "$2500",
-        img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-green-powered.jpg",
-      },
-      {
-        text: "Aquacolor Premium Naughty Brown Powered",
-        price: "$1500",
-        img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-brown-powered.jpg",
-      },
-    ].map((lens, idx) => (
-      <div className="col-6 col-md-3" key={idx}>
-        <Card>
-          <Card.Img variant="top" src={lens.img} />
-          <Card.Body>
-            <Card.Text>{lens.text}</Card.Text>
-            <Card.Text>{lens.price}</Card.Text>
-            <Button variant="outline-primary" className="d-block mx-auto">
-              Add to Cart
-            </Button>
-          </Card.Body>
-        </Card>
-      </div>
-    ))}
-  </div>
-</div>
 
+      {/* Aqua Color Lenses Section */}
+      <div className="container my-5">
+        <a href="/contactlenses">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
+            className="img-fluid w-100"
+            alt="Color Lenses Banner"
+          />
+        </a>
+        <div className="row g-3 my-3">
+          {[
+            {
+              text: "Aquacolor Premium Powered Green",
+              price: "$2000",
+              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-green.jpg",
+            },
+            {
+              text: "Aquacolor Premium Naughty Brown",
+              price: "$2400",
+              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-brown.jpg",
+            },
+            {
+              text: "Aquacolor Premium Green Powered",
+              price: "$2500",
+              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-green-powered.jpg",
+            },
+            {
+              text: "Aquacolor Premium Naughty Brown Powered",
+              price: "$1500",
+              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-brown-powered.jpg",
+            },
+          ].map((lens, idx) => (
+            <div className="col-6 col-md-3" key={idx}>
+              <Card>
+                <Card.Img variant="top" src={lens.img} />
+                <Card.Body>
+                  <Card.Text>{lens.text}</Card.Text>
+                  <Card.Text>{lens.price}</Card.Text>
+                  <Button variant="outline-primary" className="d-block mx-auto">
+                    Add to Cart
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Eye Glasses Section */}
-<div className="container my-5">
-  <h3>Eye Glasses</h3>
-  <div className="row g-3">
-    {[
-      {
-        img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c10-eyeglasses_img_9344_19_12_2023.jpg",
-        text: "Vincent Chase Eyeglasses",
-        price: "$2000",
-      },
-      {
-        img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13784-c2-eyeglasses_vincent-chase-vc-e13784-c2-eyeglasses_g_3010.jpg",
-        text: "John Jacobs Eyeglasses",
-        price: "$2500",
-      },
-      {
-        img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e16989-c1-eyeglasses_img_1234_20_02_2023.jpg",
-        text: "Lenskart Air Eyeglasses",
-        price: "$1500",
-      },
-    ].map((item, idx) => (
-      <div className="col-4" key={idx}>
-        <Card>
-          <Card.Img variant="top" src={item.img} />
-          <Card.Body>
-            <Card.Text>{item.text}</Card.Text>
-            <Card.Text>{item.price}</Card.Text>
-            <Button variant="outline-primary">Add to Cart</Button>
-          </Card.Body>
-        </Card>
+      <div className="container my-5">
+        <h3>Eye Glasses</h3>
+        <div className="row g-3">
+          {[
+            {
+              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c10-eyeglasses_img_9344_19_12_2023.jpg",
+              text: "Vincent Chase Eyeglasses",
+              price: "$2000",
+            },
+            {
+              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13784-c2-eyeglasses_vincent-chase-vc-e13784-c2-eyeglasses_g_3010.jpg",
+              text: "John Jacobs Eyeglasses",
+              price: "$2500",
+            },
+            {
+              img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e16989-c1-eyeglasses_img_1234_20_02_2023.jpg",
+              text: "Lenskart Air Eyeglasses",
+              price: "$1500",
+            },
+          ].map((item, idx) => (
+            <div className="col-4" key={idx}>
+              <Card>
+                <Card.Img variant="top" src={item.img} />
+                <Card.Body>
+                  <Card.Text>{item.text}</Card.Text>
+                  <Card.Text>{item.price}</Card.Text>
+                  <Button variant="outline-primary">Add to Cart</Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-
 
       <LoginModal show={show} handleClose={handleClose} />
     </>
