@@ -1,11 +1,12 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
+import Home1 from './Home1';
+import Home2 from './Home2';
 // Import Footer dynamically for better performance
 const Footer = React.lazy(() => import('./Footer'));
 
-import Home1 from './Home1';
-import Home2 from './Home2';
+
 
 // Import other components dynamically for better performance
 const TrackOrder = React.lazy(() => import('./Components/TrackOrder'));
