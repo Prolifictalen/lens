@@ -28,14 +28,7 @@ const Home1 = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <Navbar bg="white" data-bs-theme="light" className="py-2">
-        <Container fluid className="justify-content-end">
-          <Nav>
-            <Nav.Link href="contactus" style={{ fontSize: "12px" }}>Contact Us</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+    
 
       <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
