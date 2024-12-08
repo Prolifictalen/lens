@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -21,13 +21,11 @@ const Home1 = () => {
 
   const [searchItem, setSearchItem] = useState("");
   const search = async () => {
-    try {
-      const response = await axios.get(`http://localhost:8000/api/v1/user/getitems/${searchItem}`);
-      console.log(response.data);
-      setSearchItem("");
-    } catch (error) {
-      console.error("Error fetching search results:", error);
-    }
+    const data = await axios.get(
+      `http://localhost:8000/api/v1/user/getitems/:${searchItem}`
+    );
+    console.log(data.data);
+    setSearchItem("");
   };
 
   return (
@@ -36,112 +34,124 @@ const Home1 = () => {
       <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
-            <img src={lenskart} alt="Lenskart Logo" style={{ width: "150px", height: "auto" }} />
+            <img src={lenskart} alt="Lenskart Logo" style={{ width: "150px" }} />
           </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link className="d-flex align-items-center">
-              <FontAwesomeIcon icon={faPhone} />
-              <span className="ms-1">+1 234 567 890</span>
-            </Nav.Link>
-          </Nav>
-          <Nav className="d-flex flex-grow-1 justify-content-center">
-            <Form className="d-flex">
+          <Navbar.Toggle aria-controls="navbarResponsive" />
+          <Navbar.Collapse id="navbarResponsive">
+            <Nav className="me-auto">
+              <Nav.Link className="d-flex align-items-center">
+                <FontAwesomeIcon icon={faPhone} />
+                <span className="ms-2">+1 234 567 890</span>
+              </Nav.Link>
+            </Nav>
+            <Form className="d-flex mx-auto w-100" style={{ maxWidth: "400px" }}>
               <InputGroup>
                 <Form.Control
                   type="search"
                   value={searchItem}
                   onChange={(e) => setSearchItem(e.target.value)}
-                  placeholder="What are you looking for?"
+                  placeholder="Search..."
                   className="me-2"
                   aria-label="Search"
-                  style={{ width: "300px", fontSize: "16px", height: "40px" }}
                 />
                 <Button variant="outline-success" onClick={search}>
                   Search
                 </Button>
               </InputGroup>
             </Form>
-          </Nav>
-          <Nav>
-            <Nav.Link href="trackorder">Track Order</Nav.Link>
-            <Button variant="white" onClick={handleShow}>
-              Login/Register
-            </Button>
-            <Nav.Link href="wishlist" className="d-flex align-items-center">
-              <FontAwesomeIcon icon={faHeart} />
-              <span className="ms-1">Wishlist</span>
-            </Nav.Link>
-            <Nav.Link href="cart" className="d-flex align-items-center">
-              <FontAwesomeIcon icon={faShoppingCart} />
-              <span className="ms-1">Cart</span>
-            </Nav.Link>
-          </Nav>
+            <Nav>
+              <Nav.Link href="/trackorder" className="px-2">
+                Track Order
+              </Nav.Link>
+              <Button variant="outline-primary" onClick={handleShow}>
+                Login
+              </Button>
+              <Nav.Link href="/wishlist" className="d-flex align-items-center px-2">
+                <FontAwesomeIcon icon={faHeart} />
+                <span className="ms-1">Wishlist</span>
+              </Nav.Link>
+              <Nav.Link href="/cart" className="d-flex align-items-center px-2">
+                <FontAwesomeIcon icon={faShoppingCart} />
+                <span className="ms-1">Cart</span>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
 
-      <Navbar bg="light" data-bs-theme="light" className="py-2">
-        <Container>
-          <Nav className="flex-wrap justify-content-center">
-            <Nav.Link href="eyeglasses">EYE GLASSES</Nav.Link>
-            <Nav.Link href="screenglasses">SCREEN GLASSES</Nav.Link>
-            <Nav.Link href="kidglasses">KID GLASSES</Nav.Link>
-            <Nav.Link href="contactlenses">CONTACT LENSES</Nav.Link>
-            <Nav.Link href="sunglasses">SUNGLASSES</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      {/* Categories Section */}
+      <Container className="my-4">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+          {[
+            { link: "/eyeglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/a2.png", text: "Eyeglasses" },
+            { link: "/sunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/b2.png", text: "Sunglasses" },
+            { link: "/screenglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d2.png", text: "Screen Glasses" },
+            { link: "/contactlenses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d.png", text: "Contact Lenses" },
+            { link: "/powersunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/e2.png", text: "Power Sunglasses" },
+          ].map((card, idx) => (
+            <div className="col" key={idx}>
+              <Link to={card.link} className="text-decoration-none text-dark">
+                <Card className="h-100">
+                  <Card.Img variant="top" src={card.img} />
+                  <Card.Body className="d-flex align-items-center justify-content-center">
+                    <Card.Text className="text-center mb-0">{card.text}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </Container>
 
-      
-      {/* Other Sections */}
-      <Carousel interval={1200} className="mt-4">
+      {/* Banner */}
+      <div className="my-4">
+        <img
+          src="https://static1.lenskart.com/media/desktop/img/harmony/28-jun-24/Web%20Banner%201920x520.jpg"
+          alt="Banner"
+          className="img-fluid w-100"
+        />
+      </div>
+
+      {/* Carousel */}
+      <Carousel className="my-4">
         {[
           "https://static1.lenskart.com/media/desktop/img/23may/cannes/web.gif",
           "https://static1.lenskart.com/media/desktop/img/June24/combo_vc/Desktop.gif",
           "https://static1.lenskart.com/media/desktop/img/republic/petite/Web-banner%20option%202.jpg",
+          "https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg",
         ].map((src, idx) => (
           <Carousel.Item key={idx}>
-            <img className="d-block w-100" src={src} alt={`Slide ${idx + 1}`} />
+            <img src={src} alt={`Slide ${idx}`} className="d-block w-100" />
           </Carousel.Item>
         ))}
       </Carousel>
 
-      {/* Aqua Color Lenses Section */}
-      <div className="container my-5">
-        <a href="/contactlenses">
-          <img
-            src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
-            className="img-fluid w-100"
-            alt="Color Lenses Banner"
-          />
-        </a>
-        <div className="row g-3 my-3">
+      {/* Trending Collections */}
+      <Container className="my-5">
+        <h3 className="text-center">Trending Collections</h3>
+        <div className="row row-cols-2 row-cols-md-4 g-3 justify-content-center">
           {[
-            {
-              text: "Aquacolor Premium Powered Green",
-              price: "$2000",
-              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-green.jpg",
-            },
-            {
-              text: "Aquacolor Premium Naughty Brown",
-              price: "$2400",
-              img: "https://static1.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/aquacolor-premium-brown.jpg",
-            },
-          ].map((lens, idx) => (
-            <div className="col-6 col-md-3" key={idx}>
-              <Card>
-                <Card.Img variant="top" src={lens.img} />
-                <Card.Body>
-                  <Card.Text>{lens.text}</Card.Text>
-                  <Card.Text>{lens.price}</Card.Text>
-                  <Button variant="outline-primary" className="d-block mx-auto">
-                    Add to Cart
-                  </Button>
-                </Card.Body>
-              </Card>
+            { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
+            { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
+            { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
+            { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
+          ].map((item, idx) => (
+            <div className="col" key={idx}>
+              <Link to={item.link} className="text-decoration-none text-dark">
+                <Card className="h-100">
+                  <Card.Img variant="top" src={item.img} />
+                  <Card.Body className="d-flex flex-column align-items-center">
+                    <Card.Text className="text-center mb-3">{item.text}</Card.Text>
+                    <Button variant="outline-dark" size="sm">
+                      Explore
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Link>
             </div>
           ))}
         </div>
-      </div>
+      </Container>
 
       <LoginModal show={show} handleClose={handleClose} />
     </>
@@ -149,4 +159,3 @@ const Home1 = () => {
 };
 
 export default Home1;
-
