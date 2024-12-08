@@ -86,7 +86,7 @@ const Home1 = () => {
       <div className="container my-4">
         <a href="/stardust">
           <img
-           src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
+           src="src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
            className="img-fluid w-100"
            alt="Stardust Banner"
          />
