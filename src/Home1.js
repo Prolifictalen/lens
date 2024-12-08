@@ -82,16 +82,16 @@ const Home1 = () => {
         </Container>
       </Navbar>
 
-      {/* Stardust Section */}
+      {/* Mirages Section */}
       <div className="container my-4">
-        <a href="/stardust">
+        <a href="/mirages">
           <img
-           src="src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
-           className="img-fluid w-100"
-           alt="Stardust Banner"
-         />
-       </a>
-     </div>
+            src="https://static1.lenskart.com/media/desktop/img/Apr24/Mirages/Mirages_Banner.jpg"
+            className="img-fluid w-100"
+            alt="Mirages Banner"
+          />
+        </a>
+      </div>
 
       {/* Wear the Trend Section */}
       <div className="container my-5">
