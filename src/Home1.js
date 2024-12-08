@@ -82,6 +82,52 @@ const Home1 = () => {
         </Container>
       </Navbar>
 
+      {/* Mirages Section */}
+      <div className="container my-4">
+        <a href="/mirages">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
+            className="img-fluid w-100"
+            alt="Mirages Banner"
+          />
+        </a>
+      </div>
+      {/* Wear the Trend Section */}
+      <div className="container my-5">
+        <div className="row align-items-center">
+          <div className="col-12 col-md-4 mb-3">
+            <h3>WEAR THE TREND</h3>
+            <p>Our Hottest Collections</p>
+          </div>
+          <div className="col-12 col-md-8">
+            <div className="row g-3">
+              {[
+                { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
+                { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
+                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
+                { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
+              ].map((item, idx) => (
+                <div className="col-6 col-md-3" key={idx}>
+                  <Link to={item.link} className="text-decoration-none text-dark">
+                    <Card>
+                      <Card.Img
+                        variant="top"
+                        src={item.img}
+                        className="img-fluid"
+                      />
+                      <Card.Body>
+                        <Card.Text className="text-center">{item.text}</Card.Text>
+                        <Button variant="outline-dark" className="d-block mx-auto mt-2">Explore</Button>
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Cards Section */}
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", padding: "20px" }}>
         {[
@@ -120,6 +166,53 @@ const Home1 = () => {
       <div className="container my-5">
         <h3 className="text-center">Free Progressive Lenses</h3>
         <img src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg" className="img-fluid" alt="Banner" />
+      </div>
+              {/* Aqua Color Lenses Section */}
+      <div className="container my-5">
+        <a href="/contactlenses">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
+            className="img-fluid w-100"
+            alt="Color Lenses Banner"
+          />
+        </a>
+        <div className="row g-3 my-3">
+          {[
+            { text: "Aquacolor Premium Powered Green", price: "$2000", img: "https://via.placeholder.com/150" },
+            { text: "Aquacolor Premium Naughty Brown", price: "$2400", img: "https://via.placeholder.com/150" },
+            { text: "Aquacolor Premium Green Powered", price: "$2500", img: "https://via.placeholder.com/150" },
+            { text: "Aquacolor Premium Naughty Brown Powered", price: "$1500", img: "https://via.placeholder.com/150" },
+          ].map((lens, idx) => (
+            <div className="col-6 col-md-3" key={idx}>
+              <Card>
+                <Card.Img variant="top" src={lens.img} />
+                <Card.Body>
+                  <Card.Text>{lens.text}</Card.Text>
+                  <Card.Text>{lens.price}</Card.Text>
+                  <Button variant="outline-primary" className="d-block mx-auto">Add to Cart</Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Eye Glasses Section */}
+      <div className="container my-5">
+        <h3>Eye Glasses</h3>
+        <div className="row g-3">
+          {[
+            "https://via.placeholder.com/300",
+            "https://via.placeholder.com/300",
+            "https://via.placeholder.com/300",
+          ].map((img, idx) => (
+            <div className="col-4" key={idx}>
+              <Card>
+                <Card.Img variant="top" src={img} />
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
 
       <LoginModal show={show} handleClose={handleClose} />
