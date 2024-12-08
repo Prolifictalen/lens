@@ -104,7 +104,7 @@ const Home1 = () => {
               {[
                 { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
                 { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
-                { link: "/stardust", img: "https://static1.lenskart.com/media/desktop/img/Sep21/startdust.jpg", text: "StartDust" },
+                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
                 { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
               ].map((item, idx) => (
                 <div className="col-6 col-md-3" key={idx}>
