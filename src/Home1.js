@@ -19,12 +19,18 @@ const Home1 = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [searchItem, setSearchItem] = useState("");
-  const search = async () => {
-    const data = await axios.get(`http://localhost:8000/api/v1/user/getitems/:${searchItem}`);
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
+
+const search = async () => {
+  try {
+    const data = await axios.get(`${BASE_URL}/api/v1/user/getitems/${searchItem}`);
     console.log(data.data);
     setSearchItem("");
-  };
+  } catch (error) {
+    console.error("Error fetching search results:", error);
+  }
+};
+
 
   return (
     <>
@@ -104,7 +110,11 @@ const Home1 = () => {
               {[
                 { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
                 { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
+<<<<<<< HEAD
                 { link: "/stardust", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16909-c1-polarized-sunglasses_dsc5842_29_09_2024.jpg", text: "StartDust" },
+=======
+                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
+>>>>>>> 06044158b20799bfcf9575e92b3baad9d7c6a1e9
                 { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
               ].map((item, idx) => (
                 <div className="col-6 col-md-3" key={idx}>
