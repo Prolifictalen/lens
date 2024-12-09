@@ -86,9 +86,9 @@ const Home1 = () => {
       <div className="container my-4">
         <a href="/mirages">
           <img
-            src="https://static1.lenskart.com/media/desktop/img/Apr24/Mirages/Mirages_Banner.jpg"
+            src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg"
             className="img-fluid w-100"
-            alt="Mirages Banner"
+            alt="StarDust"
           />
         </a>
       </div>
@@ -104,7 +104,7 @@ const Home1 = () => {
               {[
                 { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
                 { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
-                { link: "/stardust", img: "https://static1.lenskart.com/media/desktop/img/Sep21/startdust.jpg", text: "StartDust" },
+                { link: "/stardust", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16909-c1-polarized-sunglasses_dsc5842_29_09_2024.jpg", text: "StartDust" },
                 { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
               ].map((item, idx) => (
                 <div className="col-6 col-md-3" key={idx}>
@@ -178,10 +178,10 @@ const Home1 = () => {
         </a>
         <div className="row g-3 my-3">
           {[
-            { text: "Aquacolor Premium Powered Green", price: "$2000", img: "https://via.placeholder.com/150" },
-            { text: "Aquacolor Premium Naughty Brown", price: "$2400", img: "https://via.placeholder.com/150" },
-            { text: "Aquacolor Premium Green Powered", price: "$2500", img: "https://via.placeholder.com/150" },
-            { text: "Aquacolor Premium Naughty Brown Powered", price: "$1500", img: "https://via.placeholder.com/150" },
+            { text: "Aquacolor Premium Powered Green", price: "$2000", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//no-resize/a/i/aquacolor-tricky-turquoise-powered-monthly---1lp_tricky_turquoise_kiara_01_09_2023.jpg" },
+            { text: "Aquacolor Premium Naughty Brown", price: "$2400", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//no-resize/a/i/aquacolor-naughty-brown-powered-monthly---1lp_naughty_brown_kiara_01_09_2023.jpg" },
+            { text: "Aquacolor Premium Green Powered", price: "$2500", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//no-resize/a/i/aquacolor-naughty-brown-powered-monthly---1lp_naughty_brown_kiara_01_09_2023.jpg" },
+            { text: "Aquacolor Premium Naughty Brown Powered", price: "$1500", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//no-resize/a/i/aquacolor-silver-gray-premium-zero-power-monthly_silver_grey_kiara_01_09_2023.jpg" },
           ].map((lens, idx) => (
             <div className="col-6 col-md-3" key={idx}>
               <Card>
@@ -202,9 +202,9 @@ const Home1 = () => {
         <h3>Eye Glasses</h3>
         <div className="row g-3">
           {[
-            "https://via.placeholder.com/300",
-            "https://via.placeholder.com/300",
-            "https://via.placeholder.com/300",
+            "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc--e17039-c1-eyeglasses__dsc1782_13_05_2024.jpg",
+            "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_g_603130_dec22.jpg",
+            "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
           ].map((img, idx) => (
             <div className="col-4" key={idx}>
               <Card>
