@@ -19,12 +19,18 @@ const Home1 = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [searchItem, setSearchItem] = useState("");
-  const search = async () => {
-    const data = await axios.get(`http://localhost:8000/api/v1/user/getitems/:${searchItem}`);
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
+
+const search = async () => {
+  try {
+    const data = await axios.get(`${BASE_URL}/api/v1/user/getitems/${searchItem}`);
     console.log(data.data);
     setSearchItem("");
-  };
+  } catch (error) {
+    console.error("Error fetching search results:", error);
+  }
+};
+
 
   return (
     <>
