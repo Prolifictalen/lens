@@ -13,7 +13,7 @@ import { faHeart, faShoppingCart, faPhone } from "@fortawesome/free-solid-svg-ic
 import lenskart from "./img/lenskart.png";
 import LoginModal from "./Components/LoginModal";
 import axios from "axios";
-
+const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
 const Home1 = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -21,9 +21,13 @@ const Home1 = () => {
 
   const [searchItem, setSearchItem] = useState("");
   const search = async () => {
-    const data = await axios.get(`http://localhost:8000/api/v1/user/getitems/:${searchItem}`);
-    console.log(data.data);
-    setSearchItem("");
+    try {
+      const data = await axios.get(`${BASE_URL}/api/v1/user/getitems/${searchItem}`);
+      console.log(data.data);
+      setSearchItem("");
+    } catch (error) {
+      console.error("Error fetching search results:", error);
+    }
   };
 
   return (
