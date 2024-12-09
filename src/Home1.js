@@ -13,7 +13,7 @@ import { faHeart, faShoppingCart, faPhone } from "@fortawesome/free-solid-svg-ic
 import lenskart from "./img/lenskart.png";
 import LoginModal from "./Components/LoginModal";
 import axios from "axios";
-const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
+
 const Home1 = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -21,13 +21,9 @@ const Home1 = () => {
 
   const [searchItem, setSearchItem] = useState("");
   const search = async () => {
-    try {
-      const data = await axios.get(`${BASE_URL}/api/v1/user/getitems/${searchItem}`);
-      console.log(data.data);
-      setSearchItem("");
-    } catch (error) {
-      console.error("Error fetching search results:", error);
-    }
+    const data = await axios.get(`http://localhost:8000/api/v1/user/getitems/:${searchItem}`);
+    console.log(data.data);
+    setSearchItem("");
   };
 
   return (
@@ -108,7 +104,7 @@ const Home1 = () => {
               {[
                 { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
                 { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
-                { link: "/stardust", img: "https://static1.lenskart.com/media/desktop/img/Sep21/startdust.jpg", text: "StartDust" },
+                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg", text: "Clubmaster" },
                 { link: "/transparent", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Transparent" },
               ].map((item, idx) => (
                 <div className="col-6 col-md-3" key={idx}>
