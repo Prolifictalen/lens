@@ -9,7 +9,7 @@ const Navbar1 = () => {
       <Container>
         <Navbar.Brand>
           <img
-            src={lenskartWhite}
+            src={lenskartwhite}
             alt="Lenskart"
             style={{ maxWidth: '100%', height: 'auto' }}
           />
