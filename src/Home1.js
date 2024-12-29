@@ -163,10 +163,15 @@ const Home1 = () => {
         ))}
       </Carousel>
 
-      {/* Other Sections */}
+      {/* Other Sections free progressive section*/}
       <div className="container my-5">
-        <h3 className="text-center">Free Progressive Lenses</h3>
-        <img src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg" className="img-fluid" alt="Banner" />
+        <a href="/MadeInJapan">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/2024/may/prog/New%20Web%20Banner.jpg"
+            className="img-fluid w-100"
+            alt="Banner"
+          />
+        </a>
       </div>
               {/* Aqua Color Lenses Section */}
       <div className="container my-5">
