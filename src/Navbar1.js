@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import lenskartwhite from './img/lenskartwhite.png';
+import lensloom from './img/lensloom.png';
 
 
 const Navbar1 = () => {
@@ -9,8 +9,8 @@ const Navbar1 = () => {
       <Container>
         <Navbar.Brand>
           <img
-            src={lenskartwhite}
-            alt="Lenskart"
+            src={lensloom}
+            alt="Lensloom"
             style={{ maxWidth: '100%', height: 'auto' }}
           />
         </Navbar.Brand>
