@@ -10,7 +10,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShoppingCart, faPhone } from "@fortawesome/free-solid-svg-icons";
-import lenskart from "./img/lenskart.png";
+import lensloom from "./img/lensloom.png";
 import LoginModal from "./Components/LoginModal";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ const Home1 = () => {
      <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
-            <img src={lenskart} alt="Lenskart Logo" style={{ width: "150px", height: "auto" }} />
+            <img src={lensloom} alt="Lensloom Logo" style={{ width: "150px", height: "auto" }} />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link className="d-flex align-items-center">
