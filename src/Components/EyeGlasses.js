@@ -9,7 +9,7 @@ const EyeGlasses = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000"
     },
     {
@@ -24,7 +24,7 @@ const EyeGlasses = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_g_603130_dec22.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500"
     }
   ];
