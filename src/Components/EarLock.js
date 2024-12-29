@@ -8,22 +8,22 @@ const EarLock = () => {
     const cardsData = [
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/black-orange-full-rim-rectangle-lenskart-air-essentials-la-e17001-c2-eyeglasses_dsc_1172_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$2000"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-grey-full-rim-rectangle-lenskart-air-essentials-la-e17002-c3-eyeglasses_dsc_1129_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$3500"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-light-green-full-rim-rectangle-lenskart-air-essentials-la-e17004-c1-eyeglasses_dsc_1074_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$2500"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/grey-full-rim-rectangle-lenskart-air-essentials-la-e17003-c2-eyeglasses_dsc_1108_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$1500"
       }
     ];
@@ -31,22 +31,22 @@ const EarLock = () => {
     const cardsData1 = [
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/grey-full-rim-rectangle-lenskart-air-essentials-la-e17000-c2-eyeglasses_dsc_1203_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$3000"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-full-rim-round-lenskart-air-essentials-la-e17005-c1-eyeglasses_dsc_1224_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$2000"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/brown-orange-full-rim-rectangle-lenskart-air-essentials-la-e17003-c1-eyeglasses_dsc_1096_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$2400"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-grey-full-rim-round-lenskart-air-essentials-la-e17005-c2-eyeglasses_dsc_1192_19_04_2024.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$4500"
       }
     ];
