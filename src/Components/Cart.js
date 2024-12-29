@@ -5,7 +5,7 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      name: 'Lenskart Air Eyeglasses',
+      name: 'Lensloom Air Eyeglasses',
       price: 2000,
       quantity: 1,
       imgSrc: 'https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688526805-img_7894.jpg',
