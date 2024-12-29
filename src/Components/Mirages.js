@@ -65,7 +65,7 @@ const Mirages = () => {
       {/* Banner */}
       <div>
         <img
-          src="https://static1.lenskart.com/media/uploads/homepage_banner.jpg" // Replace with Mirages-specific banner if available
+          src="https://static1.lenskart.com/media/desktop/img/May24/starDust/web_BannerStarDust.jpg" // Replace with Mirages-specific banner if available
           width="100%"
           height="240"
           alt="Mirages Banner"
