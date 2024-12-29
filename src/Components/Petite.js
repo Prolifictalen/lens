@@ -8,7 +8,7 @@ const Petite = () => {
   const cardsData = [
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/silver-red-pink-full-rim-cat-eye-vincent-chase-petite-vc-s16531-c1-sunglasses_img_9242_21_12_2023.jpg",
-        text: "Lenskart Hustlr",
+        text: "Lensloom Hustlr",
         price: "$2000"
       },
       {
@@ -23,7 +23,7 @@ const Petite = () => {
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16530-c1-sunglasses_img_9988_3_jan24.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$1500"
       }
     ];
@@ -31,12 +31,12 @@ const Petite = () => {
     const cardsData1 = [
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16527-c3-sunglasses_img_9332_15_12_2023.jpg",
-        text: "Lenskart Hustlr",
+        text: "Lensloom Hustlr",
         price: "$3000"
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16527-c1-sunglasses_img_9275_15_12_2023.jpg",
-        text: "Lenskart Air",
+        text: "Lensloom Air",
         price: "$2000"
       },
       {
@@ -46,7 +46,7 @@ const Petite = () => {
       },
       {
         imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16526-c2-sunglasses_img_0030_3_jan24.jpg",
-        text: "Lenskart STUDIO",
+        text: "Lensloom STUDIO",
         price: "$4500"
       }
     ];
