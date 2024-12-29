@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Navbar1 from '../Navbar1';
 const TrackOrder = () => {
   const [orderId, setOrderId] = useState('');
   const [orderStatus, setOrderStatus] = useState(null);
@@ -48,7 +48,9 @@ const TrackOrder = () => {
   };
 
   return (
-    <div style={containerStyle}>
+    <>
+      <Navbar1 />
+      <div style={containerStyle}>
       <h2>Track Your Order</h2>
       <p>Enter your Order ID to track the status of your order:</p>
       <input
@@ -64,7 +66,8 @@ const TrackOrder = () => {
       </button>
       {orderStatus && <p style={statusStyle}>{orderStatus}</p>}
     </div>
+    </>
   );
 };
-
 export default TrackOrder;
+
