@@ -78,6 +78,7 @@ const Home1 = () => {
             <Nav.Link href="kidglasses">KID GLASSES</Nav.Link>
             <Nav.Link href="contactlenses">CONTACT LENSES</Nav.Link>
             <Nav.Link href="sunglasses">SUNGLASSES</Nav.Link>
+            <Nav.Link href="EarLock">EARLOCK</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -136,7 +137,8 @@ const Home1 = () => {
           { link: "/screenglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d2.png", text: "Screen Glasses" },
           { link: "/contactlenses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/d.png", text: "Contact Lenses" },
           { link: "/powersunglasses", img: "https://static1.lenskart.com/media/desktop/img/Apr22/e2.png", text: "Power Sunglasses" },
-          { link: "/petite", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16530-c1-sunglasses_img_9988_3_jan24.jpg", text: "Petite Glasses" }
+          { link: "/petite", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16530-c1-sunglasses_img_9988_3_jan24.jpg", text: "Petite Glasses" },
+          { link: "/EarLock", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-light-green-full-rim-rectangle-lenskart-air-essentials-la-e17004-c1-eyeglasses_dsc_1074_19_04_2024.jpg", text: "EarLock" }
         ].map((card, index) => (
           <Link to={card.link} key={index} style={{ textDecoration: "none", color: "inherit" }}>
             <Card style={{ width: "16rem", height: "11rem" }}>
