@@ -10,7 +10,7 @@ const KidGlasses = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/pink-transparent-purple-pink-tortoise-full-rim-rectangle-kids-(5-8-yrs)-hooper-flexi-hooper-hp-e15084m-c3-eyeglasses_g_5388_9_21_22.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000"
     },
     {
@@ -25,7 +25,7 @@ const KidGlasses = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_g_603130_dec22.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500"
     }
   ];
@@ -33,12 +33,12 @@ const KidGlasses = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:-blue-sky-blue-full-rim-rectangle-kids--5-8-yrs--hooper-flexi-hooper-hp-e10004-c3_hooper-hp-e10004-c3-eyeglasses_g_5751_22_march23.jpg.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000"
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//h/i/transparent-blue-full-rim-round-kids-(5-8-yrs)-hooper-flexi-hooper-hp-e15083m-c1-eyeglasses_g_5370_9_21_22.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000"
     },
     {
@@ -48,7 +48,7 @@ const KidGlasses = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13772-c2-eyoglass_g_9422.jpg",
-      text: "Lenskart STUDIO",
+      text: "Lensloom STUDIO",
       price: "$4500"
     }
   ];
