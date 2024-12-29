@@ -9,7 +9,7 @@ const SunGlasses = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/silver-black-grey-gradient-rimless-square-vincent-chase-met-effect-vc-s15397-c2-sunglasses_g_1011_02_02_23.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000"
     },
     {
@@ -24,7 +24,7 @@ const SunGlasses = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-brown-brown-rimless-square-vincent-chase-met-effect-vc-s15397-c3-sunglasses_g_1017_02_02_23.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500"
     }
   ];
@@ -32,12 +32,12 @@ const SunGlasses = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s13137-c4-c4-sunglasses_g_8693.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000"
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/black-blue-full-rim-cat-eye-vincent-chase-polarized-the-metal-edit-vc-s14079-c1-polarized-sunglasses_vincent-chase-vc-s14079-c1-c1-sunglasses_vincent-chase-vc-s14079-c1-c1-sunglasses_vincent-chase-vc-s14079-c1-c1-sunglasses_2_5july23.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000"
     },
     {
@@ -47,7 +47,7 @@ const SunGlasses = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/Black-Grey-Full-Rim-Clubmaster-Vincent-Chase-Polarized-MIRAGE-VC-S10681/P-C2-Sunglasses_vincent-chase-vc-s10681-c2-sunglasses_untitled-218_02_2022.jpg",
-      text: "Lenskart STUDIO",
+      text: "Lensloom STUDIO",
       price: "$4500"
     }
   ];
