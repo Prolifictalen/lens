@@ -8,7 +8,7 @@ const MadeInJapan = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/black-full-rim-rectangle-owndays-titanium-od-e000011-xw-c1-eyeglasses_m_dsc5979_14_06_2024.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000"
     },
     {
@@ -23,7 +23,7 @@ const MadeInJapan = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/blue-gunmetal-grey-full-rim-square-owndays-eusun120a-3s-c3-sunglasses__dsc3453_11may24.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500"
     }
   ];
@@ -31,12 +31,12 @@ const MadeInJapan = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/green-tortoise-full-rim-round-owndays-snap-eusun205n-1s-c2-clip-on-eyeglasses__dsc3659_11may24.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000"
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/black-gold-black-full-rim-square-owndays-euju201n-3s-c1-eyeglasses__dsc2458_10_05_2024.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000"
     },
     {
@@ -46,7 +46,7 @@ const MadeInJapan = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/black-rimless-square-owndays-eukm108c-3s-c3-eyeglasses__dsc2756_10_05_2024.jpg",
-      text: "Lenskart STUDIO",
+      text: "Lensloom STUDIO",
       price: "$4500"
     }
   ];
