@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import RegModal from './RegModal';
-import LoginCart from '../img/LoginCart.png';
+import loginlensloom from '../img/loginlensloom.png';
 import Form from 'react-bootstrap/Form';
 import ForgetModal from './ForgetModal';
 import axios from 'axios';
@@ -37,7 +37,7 @@ const LoginModal = ({ show, handleClose }) => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Title>
-          <img src={LoginCart} width="499px" height="220px" alt="" />
+          <img src={loginlensloom} width="499px" height="220px" alt="" />
         </Modal.Title>
         <br />
         <Form style={{ width: '85%', margin: '0 auto' }}>
