@@ -10,7 +10,7 @@ const CatEye = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e11803-c11-eyeglasses_img_2089_22_11_2023.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000"
     },
     {
@@ -25,7 +25,7 @@ const CatEye = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/Vincent-Chase-VC-E13048-C4-Eyeglasses_G_0777.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500"
     }
   ];
@@ -33,12 +33,12 @@ const CatEye = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/blue-full-rim-cat-eye-vincent-chase-classic-acetate-vc-e16610-c2-eyeglasses_img_6368_09_02_2024.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000"
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c10-eyeglasses_img_9344_19_12_2023.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000"
     },
     {
@@ -48,7 +48,7 @@ const CatEye = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/black-full-rim-cat-eye-vincent-chase-classic-acetate-vc-e17037-c1-eyeglasses__dsc1820_13_05_2024.jpg",
-      text: "Lenskart STUDIO",
+      text: "Lensloom STUDIO",
       price: "$4500"
     }
   ];
