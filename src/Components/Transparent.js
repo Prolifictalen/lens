@@ -11,7 +11,7 @@ const Transparent = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/red-transparent-full-rim-cat-eye-ojos-ojos-oj-e15442-c1-eyeglasses_g_5028_03_06_23.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000",
     },
     {
@@ -26,7 +26,7 @@ const Transparent = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/transparent-tortoise-full-rim-geometric-ojos21-ojos-oj-e14391-c1-eyeglasses_g_926426_02_2022.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500",
     },
   ];
@@ -34,12 +34,12 @@ const Transparent = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/transparent-tortoise-full-rim-geometric-ojos21-ojos-oj-e14391-c1-eyeglasses_g_926426_02_2022.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/pink-transparent-black-full-rim-round-ojos21-oj-e15060--c1-eyeglasses_g_1384_06_07_2022.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000",
     },
     {
@@ -49,7 +49,7 @@ const Transparent = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//o/i/green-transparent-green-full-rim-round-ojos21-ojos-oj-e14383-c2-eyeglasses_g_921626_02_2022.jpg",
-      text: "Lenskart STUDIO",
+      text: "Lensloom STUDIO",
       price: "$4500",
     },
   ];
