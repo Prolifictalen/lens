@@ -45,7 +45,7 @@ const Footer = () => {
             <h5 className="text-uppercase mb-3">Contact Us</h5>
             <p><strong>Phone:</strong> +1 234 567 890</p>
             <p><strong>Email:</strong> support@yourwebsite.com</p>
-            <p><strong>Address:</strong> 123 Your Street, Your City, Your Country</p>
+            <p><strong>Address:</strong> 206 Ashok Vihar 2, Sector 59, New Dehli, India</p>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
