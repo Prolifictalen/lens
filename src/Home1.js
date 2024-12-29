@@ -31,7 +31,7 @@ const Home1 = () => {
      <Navbar bg="white" variant="light" expand="lg" className="py-3">
         <Container fluid>
           <Navbar.Brand>
-            <img src={lensloom} alt="Lensloom Logo" style={{ width: "150px", height: "auto" }} />
+            <img src={lensloom} alt="lensloom Logo" style={{ width: "150px", height: "auto" }} />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link className="d-flex align-items-center">
