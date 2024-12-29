@@ -105,7 +105,7 @@ const Home1 = () => {
                 { link: "/round", img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png", text: "Round" },
                 { link: "/cat-eye", img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg", text: "Cat-Eye" },
                 { link: "/stardust", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16909-c1-polarized-sunglasses_dsc5842_29_09_2024.jpg", text: "StartDust" },
-                { link: "/clubmaster", img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg", text: "Clubmaster" },
+                { link: "/transparent", img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/peyush-bansal-shark-tank-blue-sky-full-rim-hustlr-eyeglasses_g_603130_dec22.jpg", text: "Transparent" },
               ].map((item, idx) => (
                 <div className="col-6 col-md-3" key={idx}>
                   <Link to={item.link} className="text-decoration-none text-dark">
