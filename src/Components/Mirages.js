@@ -11,22 +11,22 @@ const Mirages = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16975me-c2-sunglasses_dsc_0203_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$2000",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16977me-c2-sunglasses_dsc_0150_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$3500",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16978me-c2-sunglasses_dsc_0177_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$2500",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16977me-c1-sunglasses_dsc_0125_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$1500",
     },
   ];
@@ -34,22 +34,22 @@ const Mirages = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16979me-c1-sunglasses_dsc_0163_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$3000",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-e16981me-c2-eyeglasses_dsc_0064_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$2000",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16979me-c2-sunglasses_dsc_0136_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$2400",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-lk-s16978me-c1-sunglasses_dsc_0212_21_march24.jpg",
-      text: "Lenskart",
+      text: "Lensloom",
       price: "$4500",
     },
   ];
