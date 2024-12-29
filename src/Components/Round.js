@@ -11,7 +11,7 @@ const Round = () => {
   const cardsData = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e12896-c10-eyeglasses_img_9344_19_12_2023.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$2000",
     },
     {
@@ -26,7 +26,7 @@ const Round = () => {
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/blue-transparent-full-rim-round-lenskart-air-classic-la-e14532-c2-eyeglasses_g_9420.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$1500",
     },
   ];
@@ -34,12 +34,12 @@ const Round = () => {
   const cardsData1 = [
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/purple-brown-gunmetal-purple-brown-full-rim-round-lenskart-air-essentials-la-e15847-c4-eyeglasses_g_0309_25_05_2023.jpg",
-      text: "Lenskart Hustlr",
+      text: "Lensloom Hustlr",
       price: "$3000",
     },
     {
       imgSrc: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-black-transparent-full-rim-round-lenskart-air-signia-la-e14963-c2-eyeglasses_g_3236_06_oct22.jpg",
-      text: "Lenskart Air",
+      text: "Lensloom Air",
       price: "$2000",
     },
     {
